@@ -38,4 +38,6 @@ Explain how you would make a copy of our production codebase so that you can beg
 
 1. If there are some changes after after the review, I would implement them and push again the changes.
 
-1. If the code gets approved in all the stages before production, then any CI/CD process could pick up the the branch, execute its process and deploy the changes to the production infrastructure.
+1. If the code gets approved in all the stages before production, then any CI/CD process could pick up the branch, execute its process and deploy the changes to the production infrastructure. The commands to deploy the code can vary a lot depending on each scenario, but a simple one would be to `git pull` the changes to the server.
+
+1. After the deploy I would do, if possible, a last manual verification of the implemented feature to ensure that it is executing properly. This step should not be necessary if the project has a 100% test coverage, but if it something that takes less than 10 minutes, it won't hurt anyone :).
