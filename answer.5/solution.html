@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution #5</title>
+</head>
+<body>
+    <form id="button-text-changer-form">
+        <label for="input-text">new button text</label>
+        <input type="text" name="text" id="input-text">
+        <button id="button-response">Click Me</button>
+    </form>
+<script>
+    (() => {
+        const App = {
+            htmlElements: {
+                textInput: document.querySelector('#input-text'),
+                button: document.querySelector('#button-response'),
+                form: document.querySelector('#button-text-changer-form'),
+            },
+            /**
+             * Initializes the module. Binds all events within this view.
+             */
+            init: () => {
+                App.htmlElements.form.addEventListener('submit', App.methods.onFormSubmit);
+            },
+            methods: {
+                /**
+                 * Form's submit event handler. Reads the value on the input and applies it to the button text.
+                 * @param  {Event}  e          Selector for the element
+                 */
+                onFormSubmit: (e) => {
+                    e.preventDefault();
+                    App.htmlElements.button.textContent = App.htmlElements.textInput.value;
+                }
+            }
+        }
+        App.init();
+    })();
+</script>
+</body>
+</html>
