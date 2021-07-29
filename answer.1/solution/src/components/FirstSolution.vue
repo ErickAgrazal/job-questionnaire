@@ -14,11 +14,13 @@
     </p>
     <hr>
     <h2>Answer:</h2>
-    <ul v-for="(number, x) in numbers" :key="x">
-      <div v-if="display(number)">
-        <li>{{display(number)}}</li>
-      </div>
-    </ul>
+    <div id="response">
+      <ul id="numbers" v-for="(number, x) in numbers" :key="x">
+        <div v-if="display(number)">
+          <li class="number">{{display(number)}}</li>
+        </div>
+      </ul>
+    </div>
   </div>
 </template>
 

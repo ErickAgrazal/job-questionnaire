@@ -1,30 +1,33 @@
-import { mount } from '@vue/test-utils';
-import FirstSolution from '../components/FirstSolution.vue';
+import { shallowMount } from '@vue/test-utils'
+import FirstSolution from '@/components/FirstSolution.vue'
 
-describe('FirstSolution test', () => {
-  it('should display "three" on the first item of the list.', () => {
-    const wrapper = mount(FirstSolution);
-    // const { vm } = wrapper;
-    wrapper.setData({
-        numbers: [3, 4, 5, 6, 7, 8],
-    });
-    console.log('Hello!')
-    // const button = wrapper.find('button');
-    // button.trigger('click');
-    // expect(vm.message).toBe('Hello Adam');
+describe('FirstSolution.vue', () => {
+  it('renders "three" in the list if the array starts with 3.', () => {
+    const numbers = [3, ];
+    const wrapper = shallowMount(FirstSolution, {
+      props: { numbers }
+    })
+    expect(wrapper.find(".number").text()).toBe('three');
+  })
+  it('renders "five" in the list if the array starts with 5.', () => {
+    const numbers = [5, ];
+    const wrapper = shallowMount(FirstSolution, {
+      props: { numbers }
+    })
+    expect(wrapper.find(".number").text()).toBe('five');
+  })
+  it('renders "three and five" in the list if the array starts with 15.', () => {
+    const numbers = [15, ];
+    const wrapper = shallowMount(FirstSolution, {
+      props: { numbers }
+    })
+    expect(wrapper.find(".number").text()).toBe('three and five');
   });
-  /* async keyword is needed because of updating the DOM.
-  We need to wait for button click to complete and call formatMsg function.
-  Otherwise the last assertion would fail */
-//   it('should show message on button click', async () => {
-//     const wrapper = mount(HelloWorld);
-//     const { vm } = wrapper;
-//     wrapper.setData({
-//         name: 'Adam',
-//     });
-//     const button = wrapper.find('button');
-//     await button.trigger('click');
-//     const p = wrapper.find('p');
-//     expect(p.text()).toBe('Hello Adam');
-//   });
-});
+  it('does not renders if the array starts with 4.', () => {
+    const numbers = [4, ];
+    const wrapper = shallowMount(FirstSolution, {
+      props: { numbers }
+    })
+    expect(wrapper.find(".number").exists()).toBe(false);
+  });
+})
