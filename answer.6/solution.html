@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solution #5</title>
+    <title>Solution #6</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="solution.css">
 </head>
 <body>
-    <form id="button-text-changer-form">
-        <label for="input-text">new button text</label>
-        <input type="text" name="text" id="input-text">
-        <button id="button-response">Click Me</button>
-    </form>
+    <section class="flex-container">
+        <div class="card primary-bg row">
+            <img class="logo-white" src="https://1hxokt1k03293v21r52xsoy3-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/white-logo.png" alt="">             
+            <h1 class="heading-1">Solution #6</h1>
+            <h2 class="heading-2">Using your form from question 5, Create CSS to change the look of your form utilizing our corporate colors.  This stylesheet must include reference to . and #.  Share the new form and style sheet.</h2>
+            <form id="button-text-changer-form">
+                <label class="label" for="input-text">new button text:</label>
+                <input type="text" name="text" id="input-text">
+                <button id="button-response">Click Me</button>
+            </form>
+        </div>
+    </section>
 <script>
     (() => {
         const App = {
@@ -33,7 +42,7 @@
                  */
                 onFormSubmit: (e) => {
                     e.preventDefault();
-                    App.htmlElements.button.textContent = App.htmlElements.textInput.value;
+                    App.htmlElements.button.textContent = App.htmlElements.textInput.value || 'Click Me';
                 }
             }
         }

@@ -33,7 +33,7 @@
                  */
                 onFormSubmit: (e) => {
                     e.preventDefault();
-                    App.htmlElements.button.textContent = App.htmlElements.textInput.value;
+                    App.htmlElements.button.textContent = App.htmlElements.textInput.value || 'Click Me';
                 }
             }
         }
