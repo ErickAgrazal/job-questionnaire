@@ -1,6 +1,6 @@
-# Thumbstopper Questionnaire
+# Job Questionnaire
 
-This is a project that answers a questionnare provided by Thumpstopper to apply for a software development position.
+This is a project that answers a questionnare to apply for a software development team.
 
 ## Questionnaire:
 1. ([Answer](./answer.1/README.md)) Write a vue (preferred) or react component that lists the following in an unordered list:
