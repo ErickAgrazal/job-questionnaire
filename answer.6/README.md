@@ -9,3 +9,5 @@ Using your form from question 5, Create CSS to change the look of your form util
 ## Solution:
 
 The solution is in the [solution](./solution.html) file.
+
+![solution](docs/img/solution.jpeg)

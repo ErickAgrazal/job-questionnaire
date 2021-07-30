@@ -14,3 +14,5 @@ Write a vue (preferred) or react component that lists the following in an unorde
 ## Solution:
 
 The solution is in the [solution](./solution/README.md) directory.
+
+![solution](docs/img/solution.jpeg)
