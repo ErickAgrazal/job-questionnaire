@@ -10,9 +10,9 @@ This is a project that answers a questionnare provided by Thumpstopper to apply 
     - When the current number is evenly divisible by both 3 and 5, output “three and five”
     - When the current number is not divisible by 3 or 5, don’t show it in the list
 
-2. ([Answer](./answer.2/README.md)) Write a PostresSQL query that takes the data from 2 tables and outputs “user’s name”, “user’s id” and “user’s client name”.  The tables are named “users” and “clients”.  “users” contains the columns id, name, password, username, client_id as columns.  clients contains id, name, address, city, state, zip_code.  Each column of the output should be properly labeled as indicated in the initial request.
+2. ([Answer](./answer.2-3/README.md)) Write a PostresSQL query that takes the data from 2 tables and outputs “user’s name”, “user’s id” and “user’s client name”.  The tables are named “users” and “clients”.  “users” contains the columns id, name, password, username, client_id as columns.  clients contains id, name, address, city, state, zip_code.  Each column of the output should be properly labeled as indicated in the initial request.
 
-3. ([Answer](./answer.3/README.md)) Now, take your output from question 2.  Assume that there are multiple users per client.  Display the “number of users” and “client name” for each client.
+3. ([Answer](./answer.2-3/README.md)) Now, take your output from question 2.  Assume that there are multiple users per client.  Display the “number of users” and “client name” for each client.
 
 4. ([Answer](./answer.4/README.md)) Explain how you would make a copy of our production codebase so that you can begin developing a new feature from a project plan and how you would share your work with the world as production software.  Please use exact commands for starting your work, preparing for review, and getting it deployed.
 
