@@ -20,7 +20,7 @@ Now, take your output from question 2. Assume that there are multiple users per 
 
 The solution is in the [solution3.sql](./solution3.sql) file.
 
-## Run the compose infrastructure
+## Run the compose infrastructure to execute the sqls
 
 ```bash
 docker-compose up --build
@@ -30,4 +30,13 @@ docker-compose up --build
 
 ```
 Go to: http://localhost:8080/
+```
+
+The credentials are:
+```
+System: PostgreSQL
+Server: db
+Username: user
+Password: password
+Database: database
 ```
