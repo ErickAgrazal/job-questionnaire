@@ -20,6 +20,9 @@ Now, take your output from question 2. Assume that there are multiple users per 
 
 The solution is in the [solution3.sql](./solution3.sql) file.
 
+![solution](docs/img/solution.jpeg)
+
+
 ## Run the compose infrastructure to execute the sqls
 
 ```bash

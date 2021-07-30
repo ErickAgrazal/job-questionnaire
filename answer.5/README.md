@@ -9,3 +9,5 @@ In Javascript and html5, write a simple web form that has a text field that is l
 ## Solution:
 
 The solution is in the [solution](./solution.html) file.
+
+![solution](docs/img/solution.jpeg)
